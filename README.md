@@ -1,5 +1,7 @@
 # Anahtar Teslim Websitesi — XipSoft
 
+[🇹🇷 Türkçe](README.md) · [🇬🇧 English](README.en.md)
+
 Kurumsal tanıtım, e-ticaret ve özel panel hizmetleri için tek sayfalık tanıtım sitesi.
 Bağımlılık yok; saf **HTML + CSS + JavaScript** ve form gönderimi için küçük bir **PHP** betiği.
 
