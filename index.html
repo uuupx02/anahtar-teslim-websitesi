@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XipSoft — Anahtar Teslim Web Sitesi | PHP · HTML · CSS · JS</title>
+  <meta name="description" content="XipSoft ile anahtar teslim web sitesi: kurumsal tanıtım, e-ticaret ve özel yönetim panelleri. PHP, HTML, CSS ve JavaScript ile hızlı, mobil uyumlu, SEO dostu teslim.">
+  <meta name="theme-color" content="#06080f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="XipSoft — Anahtar Teslim Web Sitesi">
+  <meta property="og:description" content="Tasarımdan yayına her şey dahil. PHP · HTML · CSS · JS ile hızlı ve mobil uyumlu web siteleri.">
+  <meta property="og:url" content="https://xipsoft.net">
+  <link rel="canonical" href="https://xipsoft.net">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Cpath d='M20 20l24 24M44 20L20 44' stroke='%2367e8f9' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m8 6-5 6 5 6M16 6l5 6-5 6"/>
+  </symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/>
+  </symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M9 9v11"/>
+  </symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3Z"/><path d="M18.5 15.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9.9-2.1Z"/>
+  </symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="8" r="3.6"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/>
+  </symbol>
+  <symbol id="i-panel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/><path d="M7 13h4M7 16.5h7"/><circle cx="17" cy="13.2" r="1.2"/>
+  </symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3l7 2.6v5.6c0 4.4-2.9 7.6-7 9.2-4.1-1.6-7-4.8-7-9.2V5.6L12 3Z"/><path d="m9.2 11.8 2 2 3.6-3.8"/>
+  </symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.5 4.5c3-2 6.5-2 6.5-2s0 3.5-2 6.5l-4.2 6.1-4.9-4.9 4.6-5.7Z"/><path d="m9 10.5-3.8.9L3 14.6l4 .9M13.5 15l-.9 3.8 3.2-2.2.9-4"/><circle cx="15.8" cy="7.4" r="1.4"/>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m5 12.5 4.5 4.5L19 7"/>
+  </symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 4 3 11l5 2 2 6 3-3.5 4.5 3L21 4Z"/><path d="m8 13 9.5-6.5L11 15"/>
+  </symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.2 2.3 3.4 5.3 3.4 8.5S14.2 18.2 12 20.5C9.8 18.2 8.6 15.2 8.6 12S9.8 5.8 12 3.5Z"/>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12h14M13 6l6 6-6 6"/>
+  </symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <path d="M4 7h16M4 12h16M4 17h16"/>
+  </symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <path d="M6 6l12 12M18 6 6 18"/>
+  </symbol>
+</svg>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#anasayfa" aria-label="XipSoft.net ana sayfa">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7 7 17"/></svg>
+      </span>
+      <span class="brand-name">Xip<span>Soft</span><em>.net</em></span>
+    </a>
+
+    <nav class="nav" aria-label="Ana menü">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menüyü aç">
+        <svg class="icon nav-toggle-open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon nav-toggle-close" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hizmetler">Hizmetler</a></li>
+        <li><a href="#paketler">Paketler</a></li>
+        <li><a href="#surec">Süreç</a></li>
+        <li><a href="#sss">SSS</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+        <li class="nav-cta"><a class="btn btn-primary btn-sm" href="#iletisim">Teklif Al <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="anasayfa">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="badge"><span class="dot" aria-hidden="true"></span> Yeni proje kontenjanı açık · Kasım 2026</p>
+        <h1>Fikrinizi <span class="text-grad">anahtar teslim</span> web sitesine dönüştürüyoruz.</h1>
+        <p class="lead">Kurumsal tanıtım siteleri, e-ticaret ve özel yönetim panelleri. Tasarımdan alan adına, hostingden SSL sertifikasına kadar her şey dahil; siz sadece içeriği onaylıyorsunuz.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#iletisim">Ücretsiz Teklif Al <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#paketler">Paketleri Gör</a>
+        </div>
+
+        <ul class="chips" aria-label="Öne çıkan özellikler">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Mobil uyumlu</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> SEO altyapısı</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Hız odaklı</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> 7 günde teslim</li>
+        </ul>
+
+        <dl class="hero-stats">
+          <div>
+            <dt>Tamamlanan proje</dt>
+            <dd><span data-count="120">120</span><span class="stat-suffix">+</span></dd>
+          </div>
+          <div>
+            <dt>Sektör deneyimi</dt>
+            <dd><span data-count="5">5</span><span class="stat-suffix"> yıl</span></dd>
+          </div>
+          <div>
+            <dt>Müşteri memnuniyeti</dt>
+            <dd><span data-count="98">98</span><span class="stat-suffix">%</span></dd>
+          </div>
+          <div>
+            <dt>Teknik destek</dt>
+            <dd><span data-count="7">7</span><span class="stat-suffix">/24</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-glow"></div>
+
+        <div class="browser">
+          <div class="browser-top">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="browser-url"><svg class="icon"><use href="#i-globe"/></svg> xipsoft.net</span>
+            <span class="browser-live">canlı</span>
+          </div>
+
+          <pre class="code"><code><span class="tok-c">// anahtar teslim kurulum</span>
+<span class="tok-k">$site</span> = <span class="tok-k">new</span> <span class="tok-f">Site</span>([
+  <span class="tok-s">'tasarim'</span>  => <span class="tok-s">'özel'</span>,
+  <span class="tok-s">'hiz'</span>      => <span class="tok-n">98</span>,
+  <span class="tok-s">'mobil'</span>    => <span class="tok-k">true</span>,
+  <span class="tok-s">'teslim'</span>   => <span class="tok-s">'7 gün'</span>,
+]);
+
+<span class="tok-k">$site</span>-><span class="tok-f">yayinla</span>(); <span class="tok-c">// 🚀</span></code></pre>
+
+          <div class="browser-bottom">
+            <div><strong>98</strong><span>Performans</span></div>
+            <div><strong>100</strong><span>SEO</span></div>
+            <div><strong>0.8s</strong><span>Yüklenme</span></div>
+          </div>
+        </div>
+
+        <div class="float-card float-card--a">
+          <span class="float-icon"><svg class="icon"><use href="#i-rocket"/></svg></span>
+          <div><strong>7 günde yayında</strong><span>ortalama teslim süresi</span></div>
+        </div>
+
+        <div class="float-card float-card--b">
+          <span class="float-icon float-icon--green"><svg class="icon"><use href="#i-shield"/></svg></span>
+          <div><strong>SSL + yedekleme</strong><span>teslimde hazır</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tech-band" aria-hidden="true">
+        <div class="tech-track">
+          <span>PHP</span><i>·</i><span>HTML5</span><i>·</i><span>CSS3</span><i>·</i><span>JavaScript</span><i>·</i><span>MySQL</span><i>·</i><span>REST API</span><i>·</i><span>Responsive</span><i>·</i><span>SEO</span><i>·</i>
+          <span>PHP</span><i>·</i><span>HTML5</span><i>·</i><span>CSS3</span><i>·</i><span>JavaScript</span><i>·</i><span>MySQL</span><i>·</i><span>REST API</span><i>·</i><span>Responsive</span><i>·</i><span>SEO</span><i>·</i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section class="section" id="hizmetler">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Hizmetler</p>
+        <h2>İhtiyacınıza göre şekillenen web çözümleri</h2>
+        <p class="section-desc">Tek sayfalık tanıtımdan veritabanı destekli panele kadar; temiz kod, ölçülebilir hız ve sürdürülebilir bir yapı.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card-icon"><svg class="icon"><use href="#i-layout"/></svg></span>
+          <h3>Kurumsal Web Sitesi</h3>
+          <p>Markanızı doğru anlatan; hakkımızda, hizmetler, referanslar ve iletişim bölümleriyle güven veren bir dijital vitrin.</p>
+          <ul class="card-list">
+            <li>Özel tasarım, mobil öncelikli</li>
+            <li>Çok sayfalı yapı ve menü yönetimi</li>
+            <li>Google Analytics & Search Console</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--d:.06s">
+          <span class="card-icon"><svg class="icon"><use href="#i-cart"/></svg></span>
+          <h3>E-Ticaret</h3>
+          <p>Ürünlerinizi listeleyin, sepet ve ödeme adımlarını tek akışta tamamlayın. Stok, kargo ve kampanya yönetimi dahil.</p>
+          <ul class="card-list">
+            <li>Ürün, kategori ve varyasyon yönetimi</li>
+            <li>Sepet, kupon ve kampanya modülü</li>
+            <li>Kargo / ödeme entegrasyonu</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--d:.12s">
+          <span class="card-icon"><svg class="icon"><use href="#i-spark"/></svg></span>
+          <h3>Landing Page</h3>
+          <p>Reklam kampanyalarınız için tek amaca odaklanan, dönüşüm oranı yüksek ve hızlı açılan tanıtım sayfaları.</p>
+          <ul class="card-list">
+            <li>Dönüşüm odaklı metin ve düzen</li>
+            <li>Form, WhatsApp ve Telegram bağlantısı</li>
+            <li>A/B testine uygun bölüm yapısı</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon"><svg class="icon"><use href="#i-user"/></svg></span>
+          <h3>Kişisel Site & Blog</h3>
+          <p>Portfolyo, özgeçmiş veya içerik üretimi için sade; yazı eklemenin dakikalar aldığı bir yayın alanı.</p>
+          <ul class="card-list">
+            <li>Blog / haber modülü</li>
+            <li>Etiket, kategori ve arama</li>
+            <li>Open Graph ve paylaşım kartları</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--d:.06s">
+          <span class="card-icon"><svg class="icon"><use href="#i-panel"/></svg></span>
+          <h3>Özel Yönetim Paneli</h3>
+          <p>İşinize özel PHP tabanlı panel: kayıt yönetimi, rol yetkileri, raporlar ve dış servis entegrasyonları.</p>
+          <ul class="card-list">
+            <li>Kullanıcı ve rol bazlı yetkilendirme</li>
+            <li>CRUD ekranları ve dosya yükleme</li>
+            <li>REST API / webhook bağlantıları</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--d:.12s">
+          <span class="card-icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+          <h3>Bakım & Destek</h3>
+          <p>Yayına aldıktan sonra da yanınızdayız: güncelleme, yedekleme, güvenlik taraması ve küçük içerik değişiklikleri.</p>
+          <ul class="card-list">
+            <li>Haftalık otomatik yedek</li>
+            <li>Güvenlik ve performans kontrolü</li>
+            <li>Öncelikli Telegram desteği</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKETLER -->
+  <section class="section section-alt" id="paketler">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Paketler</p>
+        <h2>Şeffaf fiyat, net kapsam</h2>
+        <p class="section-desc">Aşağıdaki tutarlar başlangıç seviyesidir. İhtiyaçlar netleştiğinde sabit fiyatlı, sürprizsiz bir teklif gönderiyoruz.</p>
+      </div>
+
+      <div class="plans">
+        <article class="plan reveal">
+          <h3>Başlangıç</h3>
+          <p class="plan-desc">Kişisel markanız veya yeni girişiminiz için sade ve hızlı bir başlangıç.</p>
+          <p class="price"><span class="currency">₺</span>6.900<span class="price-note">’den başlayan</span></p>
+          <ul class="plan-list">
+            <li><svg class="icon"><use href="#i-check"/></svg> 3 sayfaya kadar</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Mobil uyumlu özel tasarım</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> İletişim formu</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Temel SEO ayarları</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> 1 revizyon turu</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> 5 iş gününde teslim</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#iletisim">Teklif İste</a>
+        </article>
+
+        <article class="plan plan--featured reveal" style="--d:.06s">
+          <span class="plan-badge">En çok tercih edilen</span>
+          <h3>Kurumsal</h3>
+          <p class="plan-desc">Kendini profesyonelce anlatmak isteyen KOBİ’ler ve ajanslar için.</p>
+          <p class="price"><span class="currency">₺</span>12.900<span class="price-note">’den başlayan</span></p>
+          <ul class="plan-list">
+            <li><svg class="icon"><use href="#i-check"/></svg> 8 sayfaya kadar özel tasarım</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> PHP yönetim paneli</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Blog / haber modülü</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Gelişmiş SEO + Analytics</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> WhatsApp / Telegram entegrasyonu</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> 3 revizyon turu</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> 10 iş gününde teslim</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> 3 ay ücretsiz destek</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#iletisim">Hemen Başla</a>
+        </article>
+
+        <article class="plan reveal" style="--d:.12s">
+          <h3>E-Ticaret</h3>
+          <p class="plan-desc">Ürünlerini online satmaya başlamak isteyen işletmeler için tam donanım.</p>
+          <p class="price"><span class="currency">₺</span>21.900<span class="price-note">’den başlayan</span></p>
+          <ul class="plan-list">
+            <li><svg class="icon"><use href="#i-check"/></svg> Sınırsız ürün ve kategori</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Sepet + ödeme akışı</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Kargo ve stok entegrasyonu</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Kupon / kampanya yönetimi</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Panel eğitimi (1 saat)</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> 6 ay ücretsiz destek</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#iletisim">Teklif İste</a>
+        </article>
+      </div>
+
+      <p class="plans-note reveal">Tüm paketlerde alan adı yönlendirme, SSL sertifikası, temel hız optimizasyonu ve yayın sonrası 1 hafta hata düzeltme desteği ücretsizdir. Ödemeler %40 başlangıç, %60 teslim şeklinde alınır.</p>
+    </div>
+  </section>
+
+  <!-- SÜREÇ -->
+  <section class="section" id="surec">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Süreç</p>
+        <h2>Dört adımda yayına</h2>
+        <p class="section-desc">Tek muhatap, haftalık ilerleme raporu ve şeffaf iletişim. Sürpriz yok, gereksiz toplantı yok.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-no">01</span>
+          <h3>Keşif & Brief</h3>
+          <p>İhtiyaçları, hedef kitleyi ve referans tarzını konuşuyoruz. Kapsam ve fiyat netleşiyor.</p>
+          <span class="step-day">1 gün</span>
+        </li>
+        <li class="step reveal" style="--d:.06s">
+          <span class="step-no">02</span>
+          <h3>Tasarım</h3>
+          <p>Renk, tipografi ve bölüm düzenini içeren taslağı onayınıza sunuyoruz. Revizyonlar burada yapılır.</p>
+          <span class="step-day">2–3 gün</span>
+        </li>
+        <li class="step reveal" style="--d:.12s">
+          <span class="step-no">03</span>
+          <h3>Geliştirme</h3>
+          <p>Onaylı tasarımı PHP, HTML, CSS ve JavaScript ile kodluyor; panel ve formları bağlıyoruz.</p>
+          <span class="step-day">3–5 gün</span>
+        </li>
+        <li class="step reveal" style="--d:.18s">
+          <span class="step-no">04</span>
+          <h3>Test & Teslim</h3>
+          <p>Mobil/masaüstü testleri, hız ve SEO kontrolleri tamamlanınca alan adınıza yayınlıyoruz.</p>
+          <span class="step-day">1–2 gün</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="section section-alt" id="sss">
+    <div class="container faq-grid">
+      <div class="section-head section-head--left reveal">
+        <p class="eyebrow">SSS</p>
+        <h2>Sık sorulan sorular</h2>
+        <p class="section-desc">Aklınızda başka bir soru varsa Telegram’dan yazın; kısa sürede yanıtlıyoruz.</p>
+        <a class="btn btn-ghost" href="https://t.me/xiplarex" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg> Telegram’dan Sor
+        </a>
+      </div>
+
+      <div class="faq reveal">
+        <details open>
+          <summary>“Anahtar teslim” tam olarak ne demek?</summary>
+          <p>Tasarımdan alan adı yönlendirmesine, hosting kurulumundan SSL sertifikasına ve temel SEO ayarlarına kadar her şeyin bizim tarafımızdan yapıldığı anlamına gelir. Teslimde siteniz yayında ve kullanıma hazır olur; teknik detaylarla uğraşmanız gerekmez.</p>
+        </details>
+        <details>
+          <summary>Site ne kadar sürede teslim edilir?</summary>
+          <p>Başlangıç paketi ortalama 5, kurumsal paket 10 iş günü içinde tamamlanır. İçerik ve revizyonların hızına göre bu süre kısalabilir. Acil işler için ek ücretle öncelikli teslim planlayabiliyoruz.</p>
+        </details>
+        <details>
+          <summary>Alan adı ve hosting dahil mi?</summary>
+          <p>Paket fiyatlarına alan adı yönlendirme, SSL ve yayın kurulumu dahildir. Alan adı ve hosting aboneliğini dilerseniz sizin adınıza biz açabiliriz; abonelik bedelleri yıllık olarak ayrıca faturalanır. Kendi sağlayıcınızı kullanmak isterseniz sorun değil.</p>
+        </details>
+        <details>
+          <summary>Siteyi kendim güncelleyebilir miyim?</summary>
+          <p>Evet. Kurumsal ve e-ticaret paketlerinde PHP tabanlı bir yönetim paneli teslim ediyoruz. Yazı, ürün, görsel ve menü değişikliklerini kod bilmeden yapabilirsiniz. Teslimde kısa bir kullanım eğitimi ve video kaydı da paylaşıyoruz.</p>
+        </details>
+        <details>
+          <summary>Ödeme nasıl yapılıyor?</summary>
+          <p>Proje başlangıcında %40, teslimde %60 ödeme alıyoruz. Havale/EFT veya kripto ile ödeme yapılabilir. Kurumsal müşteriler için sözleşme ve fatura düzenlenir.</p>
+        </details>
+        <details>
+          <summary>Teslim sonrası destek var mı?</summary>
+          <p>Kurumsal pakette 3 ay, e-ticaret paketinde 6 ay ücretsiz destek sunuyoruz. Bu süre boyunca hata düzeltmeleri ve küçük içerik değişiklikleri ücretsizdir. Sonrasında aylık bakım paketiyle devam edebilirsiniz.</p>
+        </details>
+        <details>
+          <summary>Fiyatlar neden “başlayan” olarak yazıyor?</summary>
+          <p>Çünkü her projenin sayfa sayısı, entegrasyon ihtiyacı ve içerik hacmi farklı. Kapsamı netleştirdikten sonra tek seferlik, sabit fiyatlı bir teklif gönderiyoruz; sonradan ek kalem çıkarmıyoruz.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="section" id="iletisim">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">İletişim</p>
+        <h2>Projenizi konuşalım</h2>
+        <p class="section-desc">Formu doldurun ya da doğrudan Telegram’dan yazın. Genellikle 1 iş günü içinde dönüş yapıyoruz.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-item" href="https://t.me/xiplarex" target="_blank" rel="noopener">
+            <span class="contact-icon"><svg class="icon"><use href="#i-telegram"/></svg></span>
+            <span>
+              <strong>Telegram</strong>
+              <em>@xiplarex</em>
+            </span>
+            <svg class="icon contact-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+
+          <a class="contact-item" href="https://xipsoft.net" target="_blank" rel="noopener">
+            <span class="contact-icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+            <span>
+              <strong>Web sitesi</strong>
+              <em>xipsoft.net</em>
+            </span>
+            <svg class="icon contact-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+
+          <a class="contact-item" href="mailto:merhaba@xipsoft.net">
+            <span class="contact-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+            <span>
+              <strong>E-posta</strong>
+              <em>merhaba@xipsoft.net</em>
+            </span>
+            <svg class="icon contact-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+
+          <div class="contact-note">
+            <strong>Çalışma saatleri</strong>
+            <p>Hafta içi 09:00 – 19:00 (GMT+3). Acil durumlarda Telegram üzerinden 7/24 ulaşabilirsiniz.</p>
+          </div>
+
+          <div class="contact-note contact-note--accent">
+            <strong>Hızlı başlangıç</strong>
+            <p>Mesajınıza şu üç bilgiyi eklerseniz teklifi çok daha hızlı hazırlayabiliriz: sitenin amacı, örnek beğendiğiniz bir site ve tahmini bütçe.</p>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="teklif-form" action="iletisim.php" method="post" novalidate>
+          <div class="field">
+            <label for="ad">Ad Soyad <span aria-hidden="true">*</span></label>
+            <input id="ad" name="ad" type="text" autocomplete="name" placeholder="Adınız ve soyadınız" required minlength="2" maxlength="80">
+          </div>
+
+          <div class="field">
+            <label for="eposta">E-posta <span aria-hidden="true">*</span></label>
+            <input id="eposta" name="eposta" type="email" autocomplete="email" placeholder="ornek@site.com" required maxlength="120">
+          </div>
+
+          <div class="field field--full">
+            <label for="hizmet">İhtiyacınız</label>
+            <select id="hizmet" name="hizmet">
+              <option value="Kurumsal Web Sitesi">Kurumsal web sitesi</option>
+              <option value="E-Ticaret">E-ticaret</option>
+              <option value="Landing Page">Landing page</option>
+              <option value="Kişisel Site & Blog">Kişisel site / blog</option>
+              <option value="Özel Panel">Özel yönetim paneli</option>
+              <option value="Bakım & Destek">Bakım & destek</option>
+              <option value="Diğer">Diğer / emin değilim</option>
+            </select>
+          </div>
+
+          <div class="field field--full">
+            <label for="mesaj">Proje detayı <span aria-hidden="true">*</span></label>
+            <textarea id="mesaj" name="mesaj" rows="5" placeholder="Sitenin amacı, sayfa sayısı, beğendiğiniz bir örnek ve varsa bütçeniz…" required minlength="10" maxlength="2000"></textarea>
+          </div>
+
+          <div class="field field--hp" aria-hidden="true">
+            <label for="website">Bu alanı boş bırakın</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">
+              <span class="btn-label">Teklif Talebi Gönder</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+            <p class="form-hint">Bilgileriniz yalnızca teklif için kullanılır, üçüncü taraflarla paylaşılmaz.</p>
+          </div>
+
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#anasayfa" aria-label="XipSoft.net ana sayfa">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7 7 17"/></svg>
+        </span>
+        <span class="brand-name">Xip<span>Soft</span><em>.net</em></span>
+      </a>
+      <p>Web yazılım hizmetleri · PHP · HTML · CSS · JS</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Alt menü">
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#paketler">Paketler</a>
+      <a href="#surec">Süreç</a>
+      <a href="#sss">SSS</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://t.me/xiplarex" target="_blank" rel="noopener" aria-label="Telegram: xiplarex">
+        <svg class="icon"><use href="#i-telegram"/></svg>
+      </a>
+      <a href="https://xipsoft.net" target="_blank" rel="noopener" aria-label="xipsoft.net">
+        <svg class="icon"><use href="#i-globe"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span id="yil">2026</span> XipSoft. Tüm hakları saklıdır.</p>
+    <p><a href="#anasayfa">Yukarı çık ↑</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
